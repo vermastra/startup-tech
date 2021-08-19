@@ -140,8 +140,13 @@ body{
 }
 .contact {
   text-align: start;
-  padding-top: 50px;
-  background-color: rgb(49, 47, 47);
+  padding: 50px;
+  margin-right: 50px;
+  background-color: rgb(0, 0, 0);
+}
+.contact .row .img{
+	margin-left: 0px;
+	padding-left: 150px;
 }
 .contact .form{
   padding-left: 130px;
@@ -228,7 +233,8 @@ section{
 
 
 section .container{
-  margin: 100px;
+  margin: 50px;
+  margin-left: 10px;
 }
 
 section h1{
@@ -245,7 +251,7 @@ section h2{
 
 section .cards{
   display: flex;
-  
+  margin-left: 0px;
 }
 
 section .cards .text-card{
@@ -291,9 +297,38 @@ section .cards .text-card h3{
 }
       
 
-
-
-
+.class3 .elementor-section{
+	/* background-image: url(https://lindsett.com/wp-content/uploads/2020/04/image-layers-3-01.png); */
+	background-repeat: no-repeat;
+	background-size: 70% 70%;
+	background-position: center;
+	background-color: rgb(131, 130, 128);
+	width: 100%;
+	
+}
+.elementor{
+	justify-content: space-between;
+}
+.infobox2{
+	margin-top: 20px;
+	margin-right: -150px;
+	
+}
+.infocard{
+  background-color: rgb(8, 8, 8);
+  margin: 20px;
+  padding: 20px;
+  color:gray;
+  box-shadow: 0 8px 12px 0 rgba(179, 176, 176, 0.2), 0 6px 20px 0 rgba(104, 96, 96, 0.19);
+  border-radius: 5px;
+}
+.infocard p{
+	font-size: 15px;
+	color: white;
+}
+.infocard:hover{
+	background-color: rgb(83, 80, 80);
+}
 
 
 
@@ -314,7 +349,7 @@ section .cards .text-card h3{
 	padding-right: 20px;
 }
 .Footer_header p {
-	font-size: 0.8rem;
+	font-size: 1rem;
 }
 .Footer_columns_holder {
 	width: 100%;
@@ -339,7 +374,7 @@ section .cards .text-card h3{
 .Footer_columns a {
 	width: fit-content;
 	text-decoration: none;
-	font-size: 0.8rem;
+	font-size: 1rem;
 	color: rgba(245, 245, 245, 0.788);
 	transition: all 0.5s ease;
 }
@@ -405,6 +440,25 @@ section .cards .text-card h3{
 .Social-media img {
 	fill: white;
 }
+@media (max-width: 1000px){
+	.contact .form{
+		padding-left: 40px;
+		margin-left: 30px;
+	  }
+	  .contact{
+		margin-left: 20;
+		padding-left: 20;
+	  }
+	  .contact input{
+		width: 100%;
+	  }
+	  .contact textarea{
+		width: 100%;
+	  }
+	  .infobox2{
+		margin-right: 0px;
+	  }
+}
 @media (max-width: 900px) {
 	.Hero_section {
 		padding: 30px;
@@ -416,6 +470,38 @@ section .cards .text-card h3{
 	.Footer_header {
 		width: 100%;
 	}
+	.contact .form{
+		padding-left: 30px;
+		margin-left: 20px;
+	  }
+	  .contact{
+		margin-left: 0;
+		padding-left: 0;
+	  }
+	  .contact input{
+		width: 100%;
+	  }
+	  .contact textarea{
+		width: 100%;
+	  }
+	  .class3 .elementor-section{
+		/* height: 1500px; */
+	}
+}
+@media (max-width: 815px) {
+	.class3 .elementor-section{
+		/* height: 1200px; */
+	}
+}
+@media (max-width: 280px) {
+	.contact .row .img{
+		margin-left: 0px;
+		padding-left: 50px;
+	}
+	.contact .row .form{
+		padding-left: 10px;
+		margin-left: 5px;
+	  }
 }
 @media (max-width: 750px) {
 	.Hero_section {
@@ -458,6 +544,28 @@ section .cards .text-card h3{
 	.Social-media {
 		width: 50%;
 	}
+	.contact .row .img{
+		margin-left: 0px;
+		padding-left: 50px;
+	}
+	.contact .row .form{
+		padding-left: 10px;
+		margin-left: 5px;
+	  }
+	  .contact{
+		margin-left: 10px;
+		padding-left: 10px;
+	  }
+	  .contact input{
+		width: 100%;
+	  }
+	  .contact textarea{
+		width: 100%;
+	  }
+
+	  .class3 .elementor-section{
+		  /* height: 1400px; */
+	  }
 }
 @media (max-width: 600px) {
 	.navItems {
@@ -469,16 +577,26 @@ section .cards .text-card h3{
 	.Ham {
 		display: block;
 	}
+	.contact .form{
+		padding-left: 10px;
+		margin-left: 10px;
+	  }
+	  .class3 .elementor-section{
+		/* height: 1700px; */
+	}
 }
 @media (max-width: 400px) {
 	.Hero_details h1 {
 		font-size: 1.5rem;
 	}
+	.class3 .elementor-section{
+		/* height: 1900px; */
+	}
 }
 @media (max-width: 625px) {
 	.contact{
-    margin-left: 0;
-    padding-left: 0;
+    margin-left: 20;
+    padding-left: 20;
   }
   .contact input{
     width: 100%;
@@ -486,5 +604,14 @@ section .cards .text-card h3{
   .contact textarea{
     width: 100%;
   }
+  .class3 .elementor-section{
+	/* height: 1800px; */
+}
 
+}
+@media (max-width: 500px) {
+	
+	.class3 .elementor-section{
+		/* height: 1900px; */
+	}
 }
