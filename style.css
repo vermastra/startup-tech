@@ -82,7 +82,7 @@ html {
 }
 .dropMenu ul li a {
 	text-decoration: none;
-	font-size: 10px;
+	font-size: 1.5rem;
 	font-weight: 500;
 	color: #ffffff;
 	transition: all 0.5s ease;
@@ -138,30 +138,15 @@ body {
 body{
   overflow-x: hidden;
 }
-.contact {
-  text-align: start;
-  padding: 50px;
-  margin-right: 50px;
-  background-color: rgb(0, 0, 0);
+
+.ycontact h3{
+  color:palevioletred;
 }
-.contact .row .img{
-	margin-left: 0px;
-	padding-left: 150px;
-}
-.contact .form{
-  padding-left: 130px;
-  margin-left: 100px;
-  color: grey;
-  font-size: 20px;
-}
-.contact h3{
-  color:rgb(236, 69, 208);
-}
-.contact input{
-  width: 75%;
-}
-.contact textarea{
-  width: 50%;
+.sub{
+	background-color: palevioletred;
+	width: 100%;
+	color: white;
+	border-radius: 5px;
 }
 
 
@@ -191,7 +176,6 @@ body{
   height: 100vh;
   display: block;
   opacity: 0.5;
-  background: linear-gradient(grey,0.5);
 }
 
 
@@ -211,28 +195,18 @@ body{
   background-color: red;
 }
 
-.btn-green {
-  background-color: #4CAF50;
-}
 
 
 
 section{
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-section .container{
-  margin: 50px;
-  margin-left: 10px;
+  text-align: center;
+  justify-content: start;
+  font-size: large;
 }
 
 section h1{
-  font-size: 60px;
   color: white;
 }
 
@@ -245,7 +219,6 @@ section h2{
 
 section .cards{
   display: flex;
-  margin-left: 0px;
 }
 
 section .cards .text-card{
@@ -259,7 +232,12 @@ section .cards .text-card{
 section .cards  :hover{
 	transform: scale(1.1);
   }
-
+  section .cards .text-card h3,p  :hover{
+	transform: scale(1);
+  }
+  section .cards .text-card p,h3  :hover{
+	transform: scale(1);
+  }
 section .cards .text-card h3{
   font-size: 30px;
   text-align: center;
@@ -275,6 +253,8 @@ section .cards .text-card h3{
 
   section .cards{
     flex-direction: column;
+	margin-left: -10px;
+	margin-right: 200px;
   }
 }
 
@@ -302,12 +282,11 @@ section .cards .text-card h3{
 }
 .elementor{
 	justify-content: space-between;
-	
-	margin-left: 5%;
 }
 .infobox2{
 	margin-top: 20px;
-	margin-right: -200px;
+	margin-left: 0px;
+	margin-right: -150px;
 	
 }
 .infocard{
@@ -345,7 +324,7 @@ section .cards .text-card h3{
 	padding-right: 20px;
 }
 .Footer_header p {
-	font-size: 13px;
+	font-size: 1rem;
 }
 .Footer_columns_holder {
 	width: 100%;
@@ -363,14 +342,14 @@ section .cards .text-card h3{
 	letter-spacing: 2px;
 }
 .Footer_columns h1 {
-	font-size: 15px;
+	font-size: 1rem;
 	color: white;
 	font-weight: 600;
 }
 .Footer_columns a {
 	width: fit-content;
 	text-decoration: none;
-	font-size: 13px;
+	font-size: 1rem;
 	color: rgba(245, 245, 245, 0.788);
 	transition: all 0.5s ease;
 }
@@ -422,7 +401,7 @@ section .cards .text-card h3{
 	font-weight: 500;
 	width: fit-content;
 	text-decoration: none;
-	font-size: 10px;
+	font-size: 0.8rem;
 	color: rgba(255, 255, 255, 0.938);
 	transition: all 0.5s ease;
 }
@@ -489,16 +468,6 @@ section .cards .text-card h3{
 		/* height: 1200px; */
 	}
 }
-@media (max-width: 280px) {
-	.contact .row .img{
-		margin-left: 0px;
-		padding-left: 50px;
-	}
-	.contact .row .form{
-		padding-left: 10px;
-		margin-left: 5px;
-	  }
-}
 @media (max-width: 750px) {
 	.Hero_section {
 		flex-direction: column-reverse;
@@ -540,17 +509,13 @@ section .cards .text-card h3{
 	.Social-media {
 		width: 50%;
 	}
-	.contact .row .img{
-		margin-left: 0px;
-		padding-left: 50px;
-	}
-	.contact .row .form{
+	.contact .form{
 		padding-left: 10px;
-		margin-left: 5px;
+		margin-left: 10px;
 	  }
 	  .contact{
-		margin-left: 10px;
-		padding-left: 10px;
+		margin-left: 30px;
+		padding-left: 30px;
 	  }
 	  .contact input{
 		width: 100%;
@@ -573,6 +538,9 @@ section .cards .text-card h3{
 	.Ham {
 		display: block;
 	}
+	.section .cards .text-card h3{
+		font-size: x-small;
+	}
 	.contact .form{
 		padding-left: 10px;
 		margin-left: 10px;
@@ -581,21 +549,18 @@ section .cards .text-card h3{
 		/* height: 1700px; */
 	}
 }
-@media (max-width: 420px) {
+@media (max-width: 400px) {
 	.Hero_details h1 {
 		font-size: 1.5rem;
 	}
 	.class3 .elementor-section{
 		/* height: 1900px; */
 	}
-	.elementor{
-		margin-left: -5%;
-	}
 }
 @media (max-width: 625px) {
 	.contact{
-    margin-left: 10px;
-    padding-left: 10px;
+    margin-left: 20;
+    padding-left: 20;
   }
   .contact input{
     width: 100%;
@@ -608,16 +573,9 @@ section .cards .text-card h3{
 }
 
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
 	
-	.cards{
-		width: 80%;
-	}
-	.contact{
-    margin-left: 5px;
-    padding-left: 5px;
-  }
-	.contact .form{
-
+	.class3 .elementor-section{
+		/* height: 1900px; */
 	}
 }
